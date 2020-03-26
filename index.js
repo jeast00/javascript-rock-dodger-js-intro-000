@@ -161,16 +161,6 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   var leftNumbers = DODGER.style.left.replace('px', '')
-   var left = parseInt(leftNumbers, 10)
-
-   function leftStep() {
-     DODGER.style.left = `${left - 4}px`
-       if(left > 0) {
-         window.requestAnimationFrame(leftStep)
-       }
-    }
-   window.requestAnimationFrame(leftStep)
 }
 
 
