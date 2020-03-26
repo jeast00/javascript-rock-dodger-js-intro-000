@@ -181,8 +181,9 @@ function moveDodgerRight() {
      if(right < 360) {
        window.requestAnimationFrame(moveDodgerRight)
      }
+     window.requestAnimationFrame(moveDodgerLeft)
 }
-window.requestAnimationFrame(moveDodgerLeft)
+
 
 /**
  * @param {string} p The position property
