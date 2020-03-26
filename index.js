@@ -65,9 +65,9 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var topRock = 0
+  var top = 0
 
-  rock.style.top = topRock
+  rock.style.top = top
 
   /**
    * Now that we have a rock, we'll need to append
@@ -99,8 +99,8 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM.
      */
-     rock.style.top = `${topRock += 2}px`
-     if(topRock < GAME_HEIGHT) {
+     rock.style.top = `${top += 2}px`
+     if(top < GAME_HEIGHT) {
        window.requestAnimationFrame(moveRock)
      }else {
        rock.remove();
