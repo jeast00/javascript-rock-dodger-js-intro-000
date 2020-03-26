@@ -52,9 +52,10 @@ function checkCollision(rock) {
                  return true
                } else if (rockLeftEdge < dodgerRightEdge && rockRightEdge > dodgerRightEdge) {
                  return true
+               } else {
+                 return false
                }
              }
-             return false
 }
 
 function createRock(x) {
