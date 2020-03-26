@@ -65,7 +65,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  let top = 0
+  top = 0
 
   rock.style.top = top
 
@@ -99,10 +99,12 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM.
      */
+     rock.style.top =
 
   }
 
   // We should kick off the animation of the rock around here.
+
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision.
   ROCKS.push(rock)
