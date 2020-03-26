@@ -100,7 +100,7 @@ function createRock(x) {
      * we should remove the rock from the DOM.
      */
      rock.style.top = `${top += 2}px`
-     if(top < 400) {
+     if(top < GAME_HEIGHT) {
        window.requestAnimationFrame(moveRock)
      }else {
        rock.remove();
