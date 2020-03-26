@@ -168,7 +168,7 @@ function moveDodgerLeft() {
      if(left > 0) {
        window.requestAnimationFrame(moveDodgerLeft)
      }
-   
+
    window.requestAnimationFrame(leftStep)
 }
 
