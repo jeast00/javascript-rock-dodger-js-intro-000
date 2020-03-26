@@ -132,8 +132,7 @@ function endGame() {
   document.removeEventListener("keydown", moveDodger)
   alert("YOU LOSE!")
   GAME.reset()
-  START.style.display = "block"
-  start()
+  GAME.start()
 }
 
 function moveDodger(e) {
