@@ -100,7 +100,7 @@ function createRock(x) {
      * we should remove the rock from the DOM.
      */
      rock.style.top = `${top += 2}px`
-     if(top < 300) {
+     if(top < 400) {
        window.requestAnimationFrame(moveRock)
      }else {
        rock.remove();
