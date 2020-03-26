@@ -103,7 +103,7 @@ function createRock(x) {
      if(top < GAME_HEIGHT) {
        window.requestAnimationFrame(moveRock)
      }else {
-       rock.remove();
+       rock.remove()
      }
 
   }
@@ -131,8 +131,7 @@ function endGame() {
   }
   document.removeEventListener("keydown", moveDodger)
   alert("YOU LOSE!")
-  GAME.reset()
-  location.reload()
+
 }
 
 function moveDodger(e) {
