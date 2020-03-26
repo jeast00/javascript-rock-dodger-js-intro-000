@@ -187,6 +187,7 @@ function moveDodgerRight() {
        window.requestAnimationFrame(rightStep)
      }
    }
+   window.requestAnimationFrame(rightStep)
 }
 
 
