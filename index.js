@@ -162,7 +162,7 @@ function moveDodgerLeft() {
    function leftStep() {
      DODGER.style.left = `${left - 4}px`
 
-     if(left > GAME_WIDTH) {
+     if(left > 0) {
        window.requestAnimationFrame(leftStep)
      }
    }
