@@ -99,17 +99,7 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM.
      */
-     var rockNumbers = rock.style.top.replace('px', '')
-     var topRock = parseInt(rockNumbers, 10)
-     function rockStep() {
-     rock.style.top = `${topRock += 2}px`
-     if(topRock < 300) {
-       window.requestAnimationFrame(rockStep)
-     } else {
-       rock.remove()
-     }
-   }
-   window.requestAnimationFrame(rockStep)
+
   }
 
   // We should kick off the animation of the rock around here.
