@@ -105,7 +105,7 @@ function createRock(x) {
   // We should kick off the animation of the rock around here.
   function rockStep() {
     rock.style.top = `${top += 2}px`
-    if(top < 400) {
+    if(top < GAME_HEIGHT) {
       window.requestAnimationFrame(rockStep)
     }
   }
