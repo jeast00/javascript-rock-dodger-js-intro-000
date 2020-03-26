@@ -163,13 +163,12 @@ function moveDodgerLeft() {
    var leftNumbers = DODGER.style.left.replace('px', '')
    var left = parseInt(leftNumbers, 10)
 
-   function leftStep() {
      DODGER.style.left = `${left - 4}px`
 
      if(left > 0) {
-       window.requestAnimationFrame(leftStep)
+       window.requestAnimationFrame(moveDodgerLeft)
      }
-   }
+   
    window.requestAnimationFrame(leftStep)
 }
 
