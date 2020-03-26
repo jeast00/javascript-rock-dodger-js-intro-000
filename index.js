@@ -99,7 +99,7 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM.
      */
-     rock.style.top =
+     rock.style.top = `${top += 2}px`
 
   }
 
