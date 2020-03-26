@@ -167,6 +167,7 @@ function moveDodgerLeft() {
        window.requestAnimationFrame(moveDodgerLeft)
      }
 }
+window.requestAnimationFrame(moveDodgerLeft)
 
 function moveDodgerRight() {
   // implement me!
