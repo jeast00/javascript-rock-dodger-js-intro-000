@@ -180,9 +180,9 @@ function moveDodgerRight() {
    var right = parseInt(rightNumbers, 10)
    DODGER.style.left = `${right + 4}px`
      if(right < 360) {
-       window.requestAnimationFrame(moveDodgerRight)
+       window.requestAnimationFrame()
      }
-     window.requestAnimationFrame(moveDodgerRight)
+     window.requestAnimationFrame()
 }
 
 
