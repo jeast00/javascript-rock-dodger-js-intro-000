@@ -182,6 +182,7 @@ function moveDodgerRight() {
        window.requestAnimationFrame(moveDodgerRight)
      }
 }
+window.requestAnimationFrame(moveDodgerLeft)
 
 /**
  * @param {string} p The position property
