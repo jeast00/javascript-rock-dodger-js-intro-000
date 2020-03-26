@@ -133,6 +133,7 @@ function endGame() {
   alert("YOU LOSE!")
   GAME.reset()
   START.style.display = "block"
+  start()
 }
 
 function moveDodger(e) {
